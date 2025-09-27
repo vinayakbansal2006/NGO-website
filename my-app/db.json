@@ -1,0 +1,8 @@
+{
+  "shelters": [
+    { "id": 1, "name": "Shelter One", "address": "Area 1, City", "capacity": 30, "phone": "9999999991" },
+    { "id": 2, "name": "Shelter Two", "address": "Area 2, City", "capacity": 20, "phone": "9999999992" }
+  ],
+  "requests": [],
+  "volunteers": []
+}
