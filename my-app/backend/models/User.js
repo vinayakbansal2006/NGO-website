@@ -1,0 +1,5 @@
+let users = [
+  { id: 1, name: "Admin", email: "admin@email.com", password: "admin123" }
+];
+
+module.exports = users;

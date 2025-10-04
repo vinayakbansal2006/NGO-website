@@ -7,12 +7,16 @@ const ShelterCard = ({ shelter }) => {
   return (
     <div className="shelter-card">
       <div className="shelter-image">
-        <div className="shelter-badge">{shelter.availableBeds} beds available</div>
-      </div>
+        <div className="shelter-badge">
+          {shelter.capacity - shelter.currentOccupancy} beds available
+        </div>
+      </div>  
       <div className="shelter-content">
         <h3 className="shelter-name">{shelter.name}</h3>
         <p className="shelter-location">📍 {shelter.location}</p>
-        <p className="shelter-capacity">👥 Capacity: {shelter.capacity} people</p>
+        <p className="shelter-capacity">
+          👥 Capacity: {shelter.capacity} people
+        </p>
         <p className="shelter-contact">📞 {shelter.contact}</p>
         <button
           className="shelter-btn"
