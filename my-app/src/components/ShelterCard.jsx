@@ -1,15 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function ShelterCard({ s }) {
+const ShelterCard = ({ shelter }) => {
+  const navigate = useNavigate();
+
   return (
-    <article className="card">
-      <img src={s.image} alt={s.name} />
-      <div className="card-body">
-        <h3>{s.name}</h3>
-        <p>{s.address}</p>
-        <p>Capacity: {s.capacity}</p>
-        <a href={`tel:${s.phone}`} className="btn small">Call</a>
+    <div className="shelter-card">
+      <div className="shelter-image">
+        <div className="shelter-badge">{shelter.availableBeds} beds available</div>
       </div>
-    </article>
+      <div className="shelter-content">
+        <h3 className="shelter-name">{shelter.name}</h3>
+        <p className="shelter-location">📍 {shelter.location}</p>
+        <p className="shelter-capacity">👥 Capacity: {shelter.capacity} people</p>
+        <p className="shelter-contact">📞 {shelter.contact}</p>
+        <button
+          className="shelter-btn"
+          onClick={() => navigate(`/shelter/${shelter.id}`)}
+        >
+          View Details
+        </button>
+      </div>
+    </div>
   );
-}
+};
+
+export default ShelterCard;

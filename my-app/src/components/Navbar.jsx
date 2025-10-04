@@ -1,15 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
+import "../App.css";
 
-export default function Navbar() {
+// Navbar Component
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <Link to="/" className="brand">NGO Help</Link>
-      <div className="links">
-        <Link to="/shelters">Shelters</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/login">Login</Link>
+      <div className="nav-container">
+        <Link to="/" className="nav-logo">
+          NGO <span className="logo-heart">❤</span>
+        </Link>
+        
+        <div className={isOpen ? "nav-menu active" : "nav-menu"}>
+          <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/shelters" className="nav-link" onClick={() => setIsOpen(false)}>Shelters</Link>
+          <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/login" className="nav-btn" onClick={() => setIsOpen(false)}>Login</Link>
+          <Link to="/signup" className="nav-btn signup-btn" onClick={() => setIsOpen(false)}>Sign Up</Link>
+        </div>
+        
+        <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
