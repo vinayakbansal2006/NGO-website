@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  // only if you use <Link>
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -25,14 +26,19 @@ const Signup = () => {
       return;
     }
     alert(`Account created successfully as ${formData.userType}!`);
+    navigate('/');
   };
 
   return (
-    <div className="auth-page">
+    <div className="auth-page signup-page">
+      <div className="auth-background"></div>
       <div className="auth-container">
         <div className="auth-card">
-          <h1 className="auth-title">Join Us</h1>
-          <p className="auth-subtitle">Create your account to make a difference</p>
+          <div className="auth-header">
+            <div className="auth-icon">✨</div>
+            <h1 className="auth-title">Join Helping Hands</h1>
+            <p className="auth-subtitle">Create your account and start making a difference today</p>
+          </div>
 
           <form onSubmit={handleSubmit} className="auth-form">
             <div className="form-group">
@@ -48,7 +54,7 @@ const Signup = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">💝</span>
-                    Donor
+                    <span>Donor</span>
                   </span>
                 </label>
                 
@@ -62,7 +68,7 @@ const Signup = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">🤝</span>
-                    Volunteer
+                    <span>Volunteer</span>
                   </span>
                 </label>
                 
@@ -76,7 +82,7 @@ const Signup = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">👨‍💼</span>
-                    Admin
+                    <span>Admin</span>
                   </span>
                 </label>
               </div>

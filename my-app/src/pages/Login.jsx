@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  // only if you use <Link>
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -19,14 +19,20 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Login successful as ${formData.userType}!`);
+    // In real app, you would authenticate here
+    navigate('/');
   };
 
   return (
-    <div className="auth-page">
+    <div className="auth-page login-page">
+      <div className="auth-background"></div>
       <div className="auth-container">
         <div className="auth-card">
-          <h1 className="auth-title">Welcome Back</h1>
-          <p className="auth-subtitle">Login to your account</p>
+          <div className="auth-header">
+            <div className="auth-icon">🤝</div>
+            <h1 className="auth-title">Welcome Back</h1>
+            <p className="auth-subtitle">Login to continue making a difference</p>
+          </div>
 
           <form onSubmit={handleSubmit} className="auth-form">
             <div className="form-group">
@@ -42,7 +48,7 @@ const Login = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">💝</span>
-                    Donor
+                    <span>Donor</span>
                   </span>
                 </label>
                 
@@ -56,7 +62,7 @@ const Login = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">🤝</span>
-                    Volunteer
+                    <span>Volunteer</span>
                   </span>
                 </label>
                 
@@ -70,7 +76,7 @@ const Login = () => {
                   />
                   <span className="user-type-label">
                     <span className="user-type-icon">👨‍💼</span>
-                    Admin
+                    <span>Admin</span>
                   </span>
                 </label>
               </div>

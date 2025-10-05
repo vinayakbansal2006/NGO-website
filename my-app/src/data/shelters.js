@@ -5,7 +5,7 @@ export const shelters = [
     address: "123 Main Street, City",
     capacity: 50,
     phone: "9999999991",
-    image: "https://source.unsplash.com/400x250/?shelter"
+    image: "https://source.unsplash.com/400x250/?shelter",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const shelters = [
     address: "456 Park Avenue, City",
     capacity: 30,
     phone: "9999999992",
-    image: "https://source.unsplash.com/400x250/?homeless"
+    image: "https://source.unsplash.com/400x250/?homeless",
   },
   {
     id: 3,
@@ -21,6 +21,30 @@ export const shelters = [
     address: "789 Broadway, City",
     capacity: 40,
     phone: "9999999993",
-    image: "https://source.unsplash.com/400x250/?food,community"
-  }
+    image: "https://source.unsplash.com/400x250/?food,community",
+  },
+  {
+    id: 4,
+    name: "New Beginnings Shelter",
+    location: "Northside, 321 Elm St",
+    capacity: 40,
+    availableBeds: 5,
+    contact: "+1 234 567 8904",
+  },
+  {
+    id: 5,
+    name: "Compassion House",
+    location: "Southside, 654 Maple Dr",
+    capacity: 80,
+    availableBeds: 20,
+    contact: "+1 234 567 8905",
+  },
+  {
+    id: 6,
+    name: "Helping Hands Shelter",
+    location: "Central, 987 Cedar Ln",
+    capacity: 55,
+    availableBeds: 10,
+    contact: "+1 234 567 8906",
+  },
 ];

@@ -28,6 +28,66 @@ let shelters = [
     manager: "Sarah Johnson",
     image: "https://source.unsplash.com/400x250/?homeless,support",
     status: "active"
+  },
+  {
+    id: 3,
+    name: "New Dawn Shelter",
+    address: "789 River Street",
+    capacity: 40,
+    currentOccupancy: 25,
+    phone: "9999999993",
+    email: "hello@newdawn.org",
+    description: "Providing meals and accommodation to families in transition.",
+    services: ["Food", "Shelter", "Education Support"],
+    operatingHours: "8 AM - 10 PM",
+    manager: "Amit Sharma",
+    image: "https://source.unsplash.com/400x250/?refuge,shelter",
+    status: "active"
+  },
+  {
+    id: 4,
+    name: "Peace Home",
+    address: "12 Lake View Road",
+    capacity: 45,
+    currentOccupancy: 38,
+    phone: "9999999994",
+    email: "peace@home.org",
+    description: "Dedicated to helping individuals rebuild their lives with dignity.",
+    services: ["Shelter", "Job Training", "Counseling"],
+    operatingHours: "24/7",
+    manager: "Priya Singh",
+    image: "https://source.unsplash.com/400x250/?homeless,shelter",
+    status: "active"
+  },
+  {
+    id: 5,
+    name: "Bright Future Shelter",
+    address: "Sector 21, Noida",
+    capacity: 60,
+    currentOccupancy: 44,
+    phone: "9999999995",
+    email: "bright@future.org",
+    description: "Empowering youth through shelter and education programs.",
+    services: ["Shelter", "Food", "Education", "Counseling"],
+    operatingHours: "24/7",
+    manager: "Ravi Kumar",
+    image: "https://source.unsplash.com/400x250/?homeless,aid",
+    status: "active"
+  },
+  {
+    id: 6,
+    name: "Safe Steps Shelter",
+    address: "MG Road, Bangalore",
+    capacity: 55,
+    currentOccupancy: 29,
+    phone: "9999999996",
+    email: "contact@safesteps.org",
+    description: "Offering safe, supportive, and empowering environments for all.",
+    services: ["Shelter", "Medical Support", "Rehabilitation"],
+    operatingHours: "24/7",
+    manager: "Neha Verma",
+    image: "https://source.unsplash.com/400x250/?help,shelter",
+    status: "active"
   }
 ];
 
