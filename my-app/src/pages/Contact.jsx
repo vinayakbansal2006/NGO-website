@@ -55,7 +55,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="John Doe"
+                    placeholder="Priya Rai"
                   />
                 </div>
 
@@ -67,7 +67,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="john@example.com"
+                    placeholder="Priyarai@Gmail.com"
                   />
                 </div>
               </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+1 234 567 8900"
+                    placeholder="+91 7345678900"
                   />
                 </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
               <div className="contact-info-icon">📍</div>
               <div className="contact-info-text">
                 <h3>Visit Us</h3>
-                <p>123 Hope Street<br />New York, NY 10001<br />United States</p>
+                <p>123 Hope Street<br />Baner, Pune 411045<br />India</p>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ const Contact = () => {
               <div className="contact-info-icon">📞</div>
               <div className="contact-info-text">
                 <h3>Call Us</h3>
-                <p>+1 (555) 123-4567<br />Mon-Fri: 9:00 AM - 6:00 PM<br />Sat: 10:00 AM - 4:00 PM</p>
+                <p>+91 9876543270<br />Mon-Fri: 9:00 AM - 6:00 PM<br />Sat: 10:00 AM - 4:00 PM</p>
               </div>
             </div>
 

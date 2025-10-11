@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>📧 info@helpinghands.org</p>
-          <p>📞 +91 982376450</p>
+          <p>📞 +91 9876543270</p>
           <p>📍 123 Hope Street<br />Baner, PUNE 411045</p>
         </div>
         

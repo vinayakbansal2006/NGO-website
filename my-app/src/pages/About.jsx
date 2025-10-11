@@ -29,8 +29,22 @@ const About = () => {
       name: "Khush Patel",
       role: "Volunteer Coordinator",
       quote: "Volunteers are the heart of our organization. Their dedication transforms lives every single day.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
-    }
+      image: "/team/khush.jpg"
+    },
+    {
+      id: 4,
+      name: "Sanjiti Gill",
+      role: "Female Coordinator",
+      quote: "Behind every smooth arc of progress is a mind attuned to detail and rhythm.",
+      image: "/team/sanjiti.jpg"
+    },
+    {
+      id: 4,
+      name: "Parth Giri",
+      role: "Web Developer/IT Officer",
+      quote: "Bridging hearts and systems using technology to make compassion more efficient.",
+      image: "/team/parth.jpg"
+    },
   ];
 
   return (
@@ -81,7 +95,7 @@ const About = () => {
                 Helping Hands was founded in 2024 with a simple yet powerful belief: everyone deserves a helping hand during difficult times. What started as a small community initiative has grown into a comprehensive support system serving thousands of people each year.
               </p>
               <p>
-                Our journey began when our founder, Sarah Johnson, witnessed the growing homelessness crisis in our community. Rather than looking away, she decided to take action. With the help of dedicated volunteers and generous donors, we opened our first shelter with just 10 beds.
+                Our journey began when our founder, Vinayak Bansal, witnessed the growing homelessness crisis in our community. Rather than looking away, she decided to take action. With the help of dedicated volunteers and generous donors, we opened our first shelter with just 10 beds.
               </p>
               <p>
                 Today, we operate 25+ shelters, serve over 50,000 meals annually, provide job training to hundreds, and have helped more than 10,000 individuals transition from homelessness to stable housing. But our work is far from over.

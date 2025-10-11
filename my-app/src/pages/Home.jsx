@@ -76,7 +76,7 @@ const Home = () => {
             <StatCard number="10,000+" label="Lives Changed" icon="👥" />
             <StatCard number="50,000+" label="Meals Served" icon="🍽️" />
             <StatCard number="25+" label="Active Shelters" icon="🏠" />
-            <StatCard number="$500K+" label="Direct Aid Given" icon="💰" />
+            <StatCard number="₹500K+" label="Direct Aid Given" icon="💰" />
           </div>
         </div>
       </section>
@@ -169,7 +169,7 @@ const Home = () => {
               color: '#666',
               fontWeight: '600'
             }}>
-              — Michael, Former Shelter Resident
+              — Madhav Singh, First Shelter Resident
             </p>
           </div>
         </div>

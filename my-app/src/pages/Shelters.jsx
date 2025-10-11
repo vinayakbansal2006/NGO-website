@@ -9,51 +9,51 @@ const Shelters = () => {
   const shelters = [
     {
       id: 1,
-      name: "Hope Haven Shelter",
-      location: "Downtown, 123 Main St",
+      name: "Mercury Shelter",
+      location: "49 main market",
       capacity: 50,
       availableBeds: 12,
-      contact: "+91 234 567 8901"
+      contact: "+91 9876543201"
     },
     {
       id: 2,
-      name: "Safe Harbor House",
-      location: "Westside, 456 Oak Ave",
+      name: "Venus Shelter",
+      location: "78 Park Road",
       capacity: 75,
       availableBeds: 8,
-      contact: "+91 234 567 8902"
+      contact: "+91 9345678902"
     },
     {
       id: 3,
-      name: "Grace Community Center",
-      location: "Eastside, 789 Pine Rd",
+      name: "Mars Shelter",
+      location: "89 River Lane",
       capacity: 60,
       availableBeds: 15,
-      contact: "+91 234 567 8903"
+      contact: "+91 9345678903"
     },
     {
       id: 4,
-      name: "New Beginnings Shelter",
-      location: "Northside, 321 Elm St",
+      name: "Jupiter Shelter",
+      location: "12 Lake View Road",
       capacity: 40,
       availableBeds: 5,
-      contact: "+91 234 567 8904"
+      contact: "+91 9345678904"
     },
     {
       id: 5,
-      name: "Compassion House",
-      location: "Southside, 654 Maple Dr",
+      name: "Saturn Shelter",
+      location: "Sector 21, Noida",
       capacity: 80,
       availableBeds: 20,
-      contact: "+91 234 567 8905"
+      contact: "+91 9345678905"
     },
     {
       id: 6,
-      name: "Helping Hands Shelter",
-      location: "Central, 987 Cedar Ln",
+      name: "Neptune Shelter",
+      location: "MG Road, Noida",
       capacity: 55,
       availableBeds: 10,
-      contact: "+91 234 567 8906"
+      contact: "+91 7345678906"
     }
   ];
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { API_BASE_URL } from "../api/config";
 
 const ShelterCard = ({ shelter }) => {
   const navigate = useNavigate();
@@ -7,8 +8,13 @@ const ShelterCard = ({ shelter }) => {
   return (
     <div className="shelter-card">
       <div className="shelter-image">
+         <img
+        src={shelter.image}   // <-- add this
+        // alt={shelter.name}    // good practice
+        style={{ width: "100%", height: "auto" }} // optional styling
+      />
         <div className="shelter-badge">
-          {shelter.capacity - shelter.currentOccupancy} beds available
+          {shelter.capacity} beds available
         </div>
       </div>  
       <div className="shelter-content">

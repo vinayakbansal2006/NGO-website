@@ -96,7 +96,7 @@ const Signup = () => {
                 value={formData.fullName}
                 onChange={handleChange}
                 required
-                placeholder="John Doe"
+                placeholder="Priya Rai"
               />
             </div>
 
@@ -108,7 +108,7 @@ const Signup = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                placeholder="your@email.com"
+                placeholder="Priyarai@Gmail.com"
               />
             </div>
 
@@ -120,7 +120,7 @@ const Signup = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                placeholder="+1 234 567 8900"
+                placeholder="+91 7345678900"
               />
             </div>
 
